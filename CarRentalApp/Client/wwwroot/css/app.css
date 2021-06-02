@@ -4,7 +4,10 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 }
-
+a.nav-link {
+    /*had to add this for some reason or the nav-item padding was not applied*/
+    padding: .5rem 1rem;
+}
 a, .btn-link {
     color: #0366d6;
 }

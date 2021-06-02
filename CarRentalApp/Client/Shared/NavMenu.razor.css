@@ -1,7 +1,8 @@
 .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.1);
 }
-.nav-link{
+.nav-link {
+    padding: .5rem 1rem;
 }
 
 .top-row {
@@ -17,7 +18,6 @@
 }
 
 .oi {
-
     width: 2rem;
     font-size: 1.1rem;
     vertical-align: text-top;
@@ -28,6 +28,7 @@
     color: #ffd800;
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
+    padding-left: 0.5em;
 }
 
 .nav-item:active {

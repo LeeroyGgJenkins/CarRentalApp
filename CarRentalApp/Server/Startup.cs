@@ -32,14 +32,14 @@ namespace CarRentalApp.Server
 
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-
+            //Provides Industrial level protection for app
             services.AddIdentityServer()
                 .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
 
             services.AddAuthentication()
-                .AddIdentityServerJwt();
+                .AddIdentityServerJwt();//Jwt = Json Web Token highest standard
 
             services.AddControllersWithViews();
             services.AddRazorPages();
