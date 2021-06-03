@@ -18,6 +18,9 @@ namespace CarRentalApp.Server.Configurations.Entities
                     Id = "654176FF-0BEB-431A-9A0A-2D0E4378EE9A",
                     Name="User",
                     NormalizedName="USER"
+                    //Make a Unique Role ex"AdminIGA" for each company that has some admin rights save his GUID 
+                    //makes a unique User ex"adminIga_Sebastien" 
+                    //make a User Role for adminIga_Sebastien that pairs his GUID with the IGA admin GUID
                 },
                 new IdentityRole
                 {
